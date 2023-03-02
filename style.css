@@ -191,7 +191,23 @@ input:focus {
 
 input:focus::placeholder {
     color: transparent;
-  }
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+.hide-error {
+    position: relative;
+    left: 40px;
+    font-size: 0.8rem;
+    color: red;
+    display: none;
+}
+
+.show-error {
+    display: inline;
+}
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,

@@ -20,7 +20,7 @@
           <span class="material-symbols-outlined icons">
             attach_money
             </span>
-          <input class="input-field" id="bill" type="number" placeholder="0" onkeyup="saveBill(value)"/>
+          <input class="input-field" id="bill" type="number" placeholder="0" onkeyup="saveBill(value)" min="0" />
         </div>
 
         <div>
@@ -31,16 +31,19 @@
             <button class ="btn" type="button" value="15" onclick="saveTip(value)">15%</button>
             <button class ="btn" type="button" value="25" onclick="saveTip(value)">25%</button>
             <button class ="btn" type="button" value="50" onclick="saveTip(value)">50%</button>
-            <input class="btn custom" id="tip-percent" type="number" placeholder="Custom" onkeyup="saveTip(value)" />
+            <input class="btn custom" id="tip-percent" type="number" placeholder="Custom" onkeyup="saveTip(value)" min="0" />
           </div>
         </div>
       
         <div>
-          <h2>Number of People</h2>
+          <div>
+            <h2 style="float: left">Number of People</h2>
+            <span id="input-error" class="hide-error">Can't be zero</span>
+          </div>
           <span class="material-symbols-outlined icons">
             person
             </span>
-          <input class="input-field" id="number-of-people" type="number" placeholder="0" onkeyup="saveNumOfPeople(value)"/>
+          <input class="input-field" id="number-of-people" type="number" placeholder="0" onkeyup="saveNumOfPeople(value)" min="0" />
         </div>
       </div>
       <div class="right-section">
