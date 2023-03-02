@@ -9,10 +9,9 @@ let tipAmount = 0;
 let totalAmount = 0;
 
 const reset = () => {
-    console.log('reset sie aktywuje');
-    document.getElementById('bill').value = 0;
-    document.getElementById('tip-percent').value = 0;
-    document.getElementById('number-of-people').value = 0;
+    document.getElementById('bill').value = '';
+    document.getElementById('tip-percent').value = '';
+    document.getElementById('number-of-people').value = '';
     tipAmountValue.innerHTML = '$0.00';
     total.innerHTML = '$0.00';
     billValue, tipValue, numOfPeople, tipAmount, totalAmount = 0;
