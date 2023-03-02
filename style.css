@@ -135,11 +135,16 @@ input:focus {
     font-weight: 700;
 }
 
-.right-section button {
+.unactive-reset {
     width: 100%;
     background-color: var(--strong-cyan);
     color: var(--very-dark-cyan);
     opacity: 20%;
+}
+
+.active-reset {
+    transition: all 0.4s;
+    opacity: 100%;
 }
 
 .right-section h4 {

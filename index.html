@@ -20,18 +20,18 @@
           <span class="material-symbols-outlined icons">
             attach_money
             </span>
-          <input class="input-field" id="bill" type="number" placeholder="0" />
+          <input class="input-field" id="bill" type="number" placeholder="0" onkeyup="saveBill(value)"/>
         </div>
 
         <div>
           <h2>Select Tip %</h2>
           <div class="tips">
-            <button class ="btn" type="button">5%</button>
-            <button class ="btn" type="button">10%</button>
-            <button class ="btn" type="button">15%</button>
-            <button class ="btn" type="button">25%</button>
-            <button class ="btn" type="button">50%</button>
-            <input class="btn custom" id="bill" type="number" placeholder="Custom" />
+            <button class ="btn" type="button" value="5" onclick="saveTip(value)">5%</button>
+            <button class ="btn" type="button" value="10" onclick="saveTip(value)">10%</button>
+            <button class ="btn" type="button" value="15" onclick="saveTip(value)">15%</button>
+            <button class ="btn" type="button" value="25" onclick="saveTip(value)">25%</button>
+            <button class ="btn" type="button" value="50" onclick="saveTip(value)">50%</button>
+            <input class="btn custom" id="tip-percent" type="number" placeholder="Custom" onkeyup="saveTip(value)" />
           </div>
         </div>
       
@@ -40,7 +40,7 @@
           <span class="material-symbols-outlined icons">
             person
             </span>
-          <input class="input-field" id="number-of-people" type="number" placeholder="0" />
+          <input class="input-field" id="number-of-people" type="number" placeholder="0" onkeyup="saveNumOfPeople(value)"/>
         </div>
       </div>
       <div class="right-section">
@@ -64,7 +64,7 @@
           </div>
       
         <div>
-          <button class ="btn" type="button">RESET</button>
+          <button id="reset" class="btn unactive-reset" type="button" onclick="reset()">RESET</button>
         </div>
       </div>
     </main>
