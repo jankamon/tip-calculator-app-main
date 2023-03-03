@@ -125,6 +125,7 @@ input:hover {
 
 input:focus {
     border: 2px solid var(--strong-cyan);
+    outline: var(--strong-cyan);
 }
 
 .icons {
